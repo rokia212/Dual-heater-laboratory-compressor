@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Catalog | Dual Heater Laboratory Compressor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#F5F7F6;
+  color:#1E1E1E;
+}
+
+/* ============ NAVBAR ============ */
+nav{
+  height:80px;
+  background:#0F3D2E;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 60px;
+}
+
+nav h1{
+  color:white;
+  font-size:22px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  position:relative;
+}
+
+nav ul li a::after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:0;
+  height:2px;
+  background:#4CAF93;
+  transition:.3s;
+}
+
+nav ul li a:hover::after{
+  width:100%;
+}
+
+/* ============ HERO ============ */
+.hero{
+  height:40vh;
+  background:
+    linear-gradient(rgba(15,61,46,0.9),rgba(15,61,46,0.9)),
+    url("PUT-CATALOG-BACKGROUND.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero h2{
+  font-size:44px;
+}
+
+/* ============ PDF SECTION ============ */
+section{
+  padding:100px 80px;
+}
+
+.pdf-card{
+  background:white;
+  border-radius:30px;
+  padding:40px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}
+
+.pdf-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.pdf-header h3{
+  font-size:26px;
+  color:#0F3D2E;
+}
+
+.download-btn{
+  padding:12px 30px;
+  border-radius:40px;
+  background:#4CAF93;
+  color:#0F3D2E;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.download-btn:hover{
+  background:#6ED8B6;
+}
+
+/* ============ IFRAME ============ */
+.pdf-viewer{
+  width:100%;
+  height:80vh;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.pdf-viewer iframe{
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* ============ FOOTER ============ */
+footer{
+  background:#0F3D2E;
+  color:white;
+  text-align:center;
+  padding:50px;
+  margin-top:80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>Dual Heater Laboratory Compressor</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Technical Catalog</h2>
+</div>
+
+<!-- PDF SECTION -->
+<section>
+  <div class="pdf-card">
+
+    <div class="pdf-header">
+      <h3>Dual Heater Laboratory Compressor – Catalog</h3>
+      <a class="download-btn" href="pdf-catallog.pdf" download>
+        Download PDF
+      </a>
+    </div>
+
+    <div class="pdf-viewer">
+      <iframe src="pdf-catallog.pdf">
+        Your browser does not support PDFs.
+        <a href="pdf-catallog.pdf">Download the PDF</a>
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Contact us: team.email1@example.com | team.email2@example.com</p>
+  <p>© Dual Heater Laboratory Compressor</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project Overview | Dual Heater Laboratory Compressor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#F5F7F6;
+  color:#1E1E1E;
+}
+
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 60px;
+  background:#0F3D2E;
+  z-index:100;
+}
+
+nav h1{
+  color:white;
+  font-size:22px;
+}
+
+nav ul{
+  display:flex;
+  gap:35px;
+  list-style:none;
+}
+
+nav ul li{
+  color:white;
+  cursor:pointer;
+  position:relative;
+}
+
+nav ul li::after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  right:0;
+  width:0;
+  height:2px;
+  background:#4CAF93;
+  transition:.3s;
+}
+
+nav ul li:hover::after{
+  width:100%;
+  left:0;
+}
+
+/* ============ HERO OVERVIEW ============ */
+.hero{
+  height:70vh;
+  padding-top:80px;
+  background:
+    linear-gradient(rgba(15,61,46,0.9),rgba(15,61,46,0.9)),
+    url("PUT-OVERVIEW-BACKGROUND.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero h2{
+  font-size:48px;
+}
+
+.hero p{
+  max-width:800px;
+  margin-top:20px;
+  font-size:16px;
+  opacity:0.9;
+}
+
+/* ============ SECTIONS ============ */
+section{
+  padding:120px 80px;
+}
+
+.section-title{
+  font-size:36px;
+  color:#0F3D2E;
+  margin-bottom:20px;
+}
+
+.section-text{
+  max-width:850px;
+  color:#555;
+  line-height:1.8;
+}
+
+/* ============ DIAGRAM ============ */
+.diagram{
+  margin-top:60px;
+  height:420px;
+  border-radius:24px;
+  background:#ddd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  font-size:16px;
+  width: 1000px;
+}
+
+/* ============ COMPONENTS GRID ============ */
+.components{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  margin-top:70px;
+  color: rgb(0, 5, 10);
+}
+
+.components.second{
+  grid-template-columns:repeat(3,1fr);
+  margin-top:40px;
+}
+
+.component-card{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  transition:.35s;
+  height:70%;
+}
+.imagesnew{
+    height: 100%;
+    width: 100%;
+}
+.component-card:hover{
+  transform:translateY(-12px);
+}
+
+.component-img{
+  height:70%;
+  background:#ccc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#666;
+  font-size:13px;
+}
+
+.component-card h4{
+  padding:20px;
+  text-align:center;
+  font-weight:500;
+}
+
+
+.requirements{
+  background:#111;
+  color:#F5F7F6;
+  border-radius:30px;
+  padding:60px;
+  margin-top:100px;
+  transition:.4s;
+}
+
+.requirements:hover{
+  background:#0F3D2E;
+}
+
+.requirements h3{
+  font-size:32px;
+  margin-bottom:25px;
+}
+
+.requirements ul{
+  list-style:none;
+  line-height:2;
+}
+
+.requirements li::before{
+  content:"✔ ";
+  color:#4CAF93;
+}
+
+/* ============ APPLICATIONS ============ */
+.apps{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:70px;
+}
+
+.app-card{
+  width:260px;
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  transition:.35s;
+}
+
+.app-card:hover{
+  transform:translateY(-12px);
+}
+
+.app-img{
+  height:90px;
+  background:#ccc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#666;
+  margin-bottom: 50%;
+}
+
+.app-card .content{
+  padding:25px;
+  text-align:center;
+  font-size: bold;
+}
+
+/* ============ FOOTER ============ */
+footer{
+  background:#0F3D2E;
+  color:white;
+  padding:60px;
+  text-align:center;
+}
+.me {
+    color: black; /* يمكنك استبدال black بأي لون تريده مثل #333 أو #007bff */
+  text-decoration: none; /* لإزالة الخط السفلي */
+
+/* أو لفئة معينة (مثلاً <a class="no-underline">) */
+
+  color: green;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>Dual Heater Laboratory Compressor</h1>
+  <ul>
+    <a href="index.html" class="me"><li>Home</li></a>
+    <a href="project.html"  class="me"><li>Project</li></a>
+    <a href="Catalog.html"  class="me"><li>Catalog</li></a>
+    <a href="donate.html"  class="me"><li>Donate</li></a>
+
+  </ul>
+</nav>
+
+
+<!-- OVERVIEW HERO -->
+<div class="hero">
+  <div>
+    <h2>Project Overview</h2>
+    <p>
+      The Dual Heater Laboratory Compressor is a sustainable air compression system
+      built from recycled electronic waste, designed to reduce environmental impact
+      while providing reliable laboratory performance.
+    </p>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <h2 class="section-title">How It Works</h2>
+  <p class="section-text">
+    <b>Stage 1:</b><br> Component Extraction Extract the refrigerator motor and freon container as primary parts, then salvage thermal components from a hairdryer to enable air heating. Key regulation tools like the pressure switch and check valve are gathered from auto spare parts.
+
+<br><b>Stage 2:</b> <br>Component Integration The motor is fixed onto a drilled base, connecting its suction part to a check valve and its delivery part to the freon tank. The tank is then fitted with a pressure regulator and switch to manage air flow and prevent leaks.
+
+<br><b>Stage 3:</b> <br>Electrical Wiring Wiring is centralized in the pressure switch, connecting the motor and heating elements to the AC power source. This setup ensures that current flows correctly to both the dryer and motor, allowing for synchronized operation.
+  </p>
+
+  <div class="diagram">
+    <img src="img/digram.jpeg" alt="">
+  </div>
+</section>
+
+<!-- COMPONENTS -->
+<section>
+  <h2 class="section-title">Main Components</h2>
+
+  <div class="components">
+    <div class="component-card">
+      <div class="component-img"><img class="imagesnew" src="https://www.hellotechnic.com/images/articles/Refrigerator-main-components-and-their-functions/Refrigerator-main-components-and-their-functions-1.jpg"></div>
+      <h4>Electric Motor</h4>
+    </div>
+
+    <div class="component-card">
+      <div class="component-img"><img  class="imagesnew" src="img/tank.png"></div>
+      <h4>Air Tank</h4>
+    </div>
+
+    <div class="component-card">
+      <div class="component-img"><img  class="imagesnew" src="img/hair dryer.png">e</div>
+      <h4>Hair dryer</h4>
+    </div>
+
+    <div class="component-card">
+      <div class="component-img"><img  class="imagesnew" src="img/valve.png"></div>
+      <h4>Pressure Valve</h4>
+    </div>
+  </div>
+
+  <div class="components second">
+    <div class="component-card">
+      <div class="component-img"><img  class="imagesnew" src="img/hose.png"></div>
+      <h4>Flexible Hose</h4>
+    </div>
+
+    <div class="component-card">
+      <div class="component-img"><img  class="imagesnew" src="img/sensor.png"></div>
+      <h4>Temperature Sensor</h4>
+    </div>
+
+    <div class="component-card">
+      <div class="component-img"><img  class="imagesnew" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQu2mqzKnE-AJ-DgdqmJFq18WL8sk4KmS8Pg&s"></div>
+      <h4>Structural Frame</h4>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN REQUIREMENTS -->
+<section>
+  <div class="requirements">
+    <h3>Design Requirements</h3>
+    <ul>
+      <li>Safe operation under laboratory conditions</li>
+      <li>Efficient heat and pressure control</li>
+      <li>Low energy consumption</li>
+      <li>Modular and repairable structure</li>
+      <li>Use of recycled and reused components</li>
+    </ul>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section>
+  <h2 class="section-title">Applications</h2>
+
+  <div class="apps">
+    <div class="app-card">
+      <div class="app-img"><img src="img/ph.png"></div>
+      <div class="content">
+        Used for pressure and airflow experiments
+      </div>
+    </div>
+
+    <div class="app-card">
+      <div class="app-img"><img src="img/chem.png"></div>
+      <div class="content">
+        Supports controlled gas flow applications
+      </div>
+    </div>
+
+    <div class="app-card">
+      <div class="app-img"><img src="img/fab.png"></div>
+      <div class="content">
+        Ideal for prototyping and educational projects
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Contact: team emails here</p>
+  <p>© Dual Heater Laboratory Compressor</p>
+</footer>
+
+</body>
+</html>

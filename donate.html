@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Second.Css">
+   <link rel="icon" type="image/png" href="img/icon.jpg">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.login-left {
+  width: 50%;
+  background: #2A3649;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left img { 
+  width: 100%;   
+  height: 100%;  
+  object-fit: cover;
+  display: block;  
+
+}
+
+
+.login-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right .first-website-name {
+  color: #2A3649;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+    text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #2A3649;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2A3649;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1f2838;
+}
+
+
+.btn.google {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn.google:hover {
+  background: #f1f1f1;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #aaa;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+}
+.left-reset {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-reset img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+}
+.allreset {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;       
+  max-width: 600px;
+    
+}
+.login-form label {
+  align-self: flex-start;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.right-reset {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  flex-direction: column;
+  height: 50vh;           
+} 
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .sidebar {
+    float: left;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 750px;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 24px;
+  }
+  .nav-menu {
+    display: none; 
+  }
+  .mobile-menu-icon {
+    display: block; 
+  }
+}
+.cc {
+  color: black; 
+  text-decoration: none; 
+}
+
+.cc {
+  color: white;
+  text-decoration: none;
+}
+</style>
+
+  </head>
+<body>
+    <div class="login-container">
+     <div class="login-left">
+      <img src="img/donate.png">
+     </div>
+      <div class="login-right">
+        <h2><span class="first-website-name">Dual heater laboratory compressor</span></h2>
+      <p class="welcome">Welcome Back!</p>
+       <form class="login-form" id="donateForm">
+        <label for="email">EMAIL ID</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+        <label for="password">Device name</label>
+        <input type="password" id="password" placeholder="device name" required>
+         <label for="password">Charastrastics</label>
+        <input type="password" id="password" placeholder="voltage , current , malfunctions" required>
+
+        <button type="submit" class="btn"><a  class="cc" href="thanks.html">Send</a></button>
+
+        
+      </form>
+    </div>
+    
+    </div>
+    <script>
+document.getElementById("donateForm").addEventListener("submit", function(e){
+  e.preventDefault(); 
+  window.location.href = "thanks.html";
+});
+</script>
+
+</body>
+</html>
