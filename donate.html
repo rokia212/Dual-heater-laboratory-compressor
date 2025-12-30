@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
@@ -228,6 +230,70 @@ body {
 .cc {
   color: white;
   text-decoration: none;
+    @media (max-width: 768px){
+
+  nav{
+    padding: 0 20px;
+  }
+
+  nav ul{
+    display:none; /* نقدر نعملها menu بعدين */
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+  section{
+    padding:80px 20px;
+  }
+
+  .main{
+    flex-direction:column;
+    gap:40px;
+  }
+
+  .form-card{
+    width:100%;
+  }
+
+  .cards,
+  .apps,
+  .comparison{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card.center{
+    transform:scale(1);
+  }
+
+  iframe{
+    height:60vh;
+  }
+}
+@media (max-width: 1024px){
+
+  section{
+    padding:100px 40px;
+  }
+
+  .components{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .components.second{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+iframe{
+  width:100%;
+}
+
 }
 </style>
 
@@ -263,4 +329,5 @@ document.getElementById("donateForm").addEventListener("submit", function(e){
 </script>
 
 </body>
+
 </html>
